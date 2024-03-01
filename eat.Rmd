@@ -62,3 +62,8 @@ chisqtestGC(table1)
 
     The results of the chi-squared test show a chi-squared statistic that significantly surpasses the 2 degrees of freedom available in the data. Additionally, the data does contain a critical p-value, indicating a clear differentiation within the dataset.
 
+```{r}
+fisherXY(mydata$race,mydata$eatout,printAll=TRUE,confL = 0.99)
+```   
+
+    We noticed that the critical p-value pertained to the relationship between the black and white racial categories. We presented all the p-values for different combinations, which indicates that the only significant difference is within the "black" and "white" variables.
